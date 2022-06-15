@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import Movie from "../components/Movie";
+import BriefMovie from "../components/BriefMovie";
+import styles from "./Home.module.css";
+
 function Home() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
@@ -7,25 +9,26 @@ function Home() {
   const getMovies = async () => {
     const json = await (
       await fetch(
-        "https://yts.mx/api/v2/list_movies.json?minimum_rating=9&sort_by=year"
+        "https://yts.mx/api/v2/list_movies.json?minimum_rating=8&sort_by=year"
       )
     ).json();
     setMovies(json.data.movies);
     setLoading(false);
   };
-  console.log(movies);
   useEffect(() => {
     getMovies();
   }, []);
-  console.log(movies);
   return (
-    <div>
+    <div className={styles.container}>
       {loading ? (
-        <h1>Loading...</h1>
+        <div className={styles.loader}>
+          <span>Loading...</span>
+        </div>
       ) : (
-        movies.map((movie) => (
-          <div key={movie.id}>
-            <Movie
+        <div className={styles.movies}>
+          {movies.map((movie) => (
+            <BriefMovie
+              key={movie.id}
               id={movie.id}
               title={movie.title}
               year={movie.year}
@@ -33,9 +36,8 @@ function Home() {
               summary={movie.summary}
               genres={movie.genres}
             />
-            <hr />
-          </div>
-        ))
+          ))}
+        </div>
       )}
     </div>
   );
