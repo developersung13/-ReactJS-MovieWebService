@@ -1,3 +1,3 @@
 # 🎬 MovieWebService (ReactJS) 
 
-> __https://developersung13.github.io/MovieWebService/__
+> https://developersung13.github.io/MovieWebService/
