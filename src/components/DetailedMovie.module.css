@@ -1,0 +1,69 @@
+.movie {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  font-weight: 300;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  color: #adaeb9;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  width: 40%;
+}
+
+#prevPageBtn {
+  position: absolute;
+  left: 17px;
+  top: 20px;
+  padding: 7px;
+  font-size: 30px;
+  transition: 0.1s ease-in;
+  color: rgb(31, 31, 31);
+}
+
+#prevPageBtn:hover {
+  left: 12px;
+  color: #505050;
+  cursor: pointer;
+}
+
+.movie_title,
+.movie_year {
+  margin: 0;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.08s ease-in-out;
+}
+
+.movie_img {
+  margin-top: 25px;
+  border-radius: 5px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.movie_genres {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px 0px;
+}
+
+.movie_genres li {
+  margin-right: 10px;
+  font-size: 14px;
+  border: 1px solid rgb(135, 135, 135);
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+
+.movie_desc {
+  margin: 30px auto;
+  width: 85%;
+  letter-spacing: 0.5px;
+}
