@@ -17,7 +17,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
@@ -40,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://developersung13.github.io/MovieWebService"
+  "homepage": "https://developersung13.github.io/movie-web-service"
 }

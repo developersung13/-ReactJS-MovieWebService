@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import DetailedMovie from "./../components/DetailedMovie";
+import DetailedMovie from "../components/DetailedMovie";
 import styles from "./Detail.module.css";
 
 function Detail() {
