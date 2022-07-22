@@ -11,7 +11,7 @@ function DetailedMovie({ title, year, rating, desc, genres, coverImg, url }) {
       <h2 className={styles.movie_title}>{title}</h2>
       <h3 className={styles.movie_year}>{year}</h3>
       <img className={styles.movie_img} src={coverImg} alt={title} />
-      <h3>Rating: {rating}</h3>
+      <h3>Rating: {rating} ⭐️</h3>
       <ul className={styles.movie_genres}>
         {genres.map((genre) => (
           <li key={genre}>{genre}</li>
