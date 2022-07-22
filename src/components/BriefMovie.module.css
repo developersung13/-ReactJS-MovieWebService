@@ -58,8 +58,11 @@
   margin: 5px 0px;
 }
 
-.movie_genres li,
 .movie_year {
-  margin-right: 10px;
+  margin-top: 15px;
   font-size: 14px;
+}
+.movie_genres li {
+  margin-right: 10px;
+  font-size: 10px;
 }

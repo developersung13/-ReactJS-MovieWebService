@@ -10,5 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 7px;
+  font-weight: 100;
 }

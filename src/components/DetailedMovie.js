@@ -24,7 +24,7 @@ function DetailedMovie({ title, year, rating, desc, genres, coverImg, url }) {
         rel="noreferrer"
         className={styles.movie_moreInfo}
       >
-        More..
+        More
       </a>
     </div>
   );

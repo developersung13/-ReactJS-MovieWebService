@@ -38,6 +38,10 @@
   transition: 0.08s ease-in-out;
 }
 
+.movie_year {
+  margin-top: 17px;
+}
+
 .movie_img {
   margin-top: 25px;
   border-radius: 5px;
@@ -66,4 +70,13 @@
   margin: 30px auto;
   width: 85%;
   letter-spacing: 0.5px;
+}
+
+.movie_moreInfo {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 172, 172);
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: black;
 }
